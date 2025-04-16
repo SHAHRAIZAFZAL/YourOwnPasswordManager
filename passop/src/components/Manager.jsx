@@ -35,6 +35,7 @@ const Manager = () => {
         });
         navigator.clipboard.writeText(text)
     }
+//  For Password Showing
 
     const showPassword = () => {
         passwordRef.current.type = "text"
@@ -194,7 +195,7 @@ const Manager = () => {
                                             </div>
                                         </div>
                                     </td>
-                                    <td className='justify-center py-2 border border-white text-center'>
+                                    <td className='justify-center py-2 border border-white p-0 text-center'>
                                         <span className='cursor-pointer mx-1' onClick={() => { editPassword(item.id) }}>
                                             <lord-icon
                                                 src="https://cdn.lordicon.com/gwlusjdu.json"

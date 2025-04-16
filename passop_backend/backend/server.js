@@ -18,7 +18,7 @@ const dbName = process.env.DB_NAME
 const app = express()
 const port = 3000 
 
-// Middleware
+// Middlewaree
 app.use(bodyparser.json())
 app.use(cors())
 
@@ -31,7 +31,7 @@ app.get('/', async (req, res) => {
     res.json(findResult)
 })
 
-// Save a password
+// Save a passwords
 app.post('/', async (req, res) => { 
     const password = req.body
     const db = client.db(dbName);
@@ -40,7 +40,7 @@ app.post('/', async (req, res) => {
     res.send({success: true, result: findResult})
 })
 
-// Delete a password by id
+// Delete a password by ids
 app.delete('/', async (req, res) => { 
     const password = req.body
     const db = client.db(dbName);
